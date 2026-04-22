@@ -23,7 +23,22 @@ Given a PR (or inferred from the current branch), the skill will:
 
 ## Install
 
-### Option A — As a standalone skill
+### Option A — With [`npx skills`](https://github.com/vercel-labs/skills) (recommended)
+
+```bash
+npx skills add debugtheworldbot/fix-pr-comments
+```
+
+One command, works across Claude Code / Cursor / Codex / Gemini CLI. The CLI reads this repo's `.claude-plugin/plugin.json` + `skills/` layout and drops the skill into the right place for your agent.
+
+### Option B — As a Claude Code plugin
+
+```
+/plugin marketplace add debugtheworldbot/fix-pr-comments
+/plugin install fix-pr-comments
+```
+
+### Option C — Manual clone
 
 ```bash
 git clone --depth 1 https://github.com/debugtheworldbot/fix-pr-comments /tmp/fpc
@@ -38,13 +53,6 @@ Or, if you prefer a single clone you can update with `git pull`:
 mkdir -p ~/.claude/skills && cd ~/.claude/skills
 git clone https://github.com/debugtheworldbot/fix-pr-comments _fix-pr-comments-src
 ln -s _fix-pr-comments-src/skills/fix-pr-comments fix-pr-comments
-```
-
-### Option B — As a Claude Code plugin
-
-```
-/plugin marketplace add debugtheworldbot/fix-pr-comments
-/plugin install fix-pr-comments
 ```
 
 ## Usage
