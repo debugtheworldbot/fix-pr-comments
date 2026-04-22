@@ -1,0 +1,13 @@
+{
+  "name": "fix-pr-comments",
+  "version": "0.1.0",
+  "description": "Triage unresolved GitHub PR review threads: fix valid feedback and resolve, rebut invalid feedback and leave open.",
+  "author": {
+    "name": "debugtheworldbot",
+    "url": "https://github.com/debugtheworldbot"
+  },
+  "homepage": "https://github.com/debugtheworldbot/fix-pr-comments",
+  "repository": "https://github.com/debugtheworldbot/fix-pr-comments",
+  "license": "MIT",
+  "keywords": ["github", "pull-request", "code-review", "gh-cli"]
+}
